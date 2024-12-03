@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I'm happy to join the 18th BiGSEM Doctoral Workshop on Economics and Management at Bielefeld University and present on-going work on estimating treatment effects under competition. :christmas_tree:
+I'm happy to join the [18th BiGSEM Doctoral Workshop on Economics and Management](https://www.uni-bielefeld.de/fakultaeten/wirtschaftswissenschaften/einrichtungen/bigsem/events/bigsem-doctoral-workshop-1/) at Bielefeld University and present on-going work on estimating treatment effects under competition. :christmas_tree:
