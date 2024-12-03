@@ -8,6 +8,7 @@
       primaryClass={cs.LG},
       url={https://arxiv.org/abs/2410.13341}, 
 
+      abstract={High quality annotations are increasingly a bottleneck in the explosively growing machine learning ecosystem. Scalable evaluation methods that avoid costly annotation have therefore become an important research ambition. Many hope to use strong existing models in lieu of costly labels to provide cheap model evaluations. Unfortunately, this method of using models as judges introduces biases, such as self-preferencing, that can distort model comparisons. An emerging family of debiasing tools promises to fix these issues by using a few high quality labels to debias a large number of model judgments. In this paper, we study how far such debiasing methods, in principle, can go. Our main result shows that when the judge is no more accurate than the evaluated model, no debiasing method can decrease the required amount of ground truth labels by more than half. Our result speaks to the severe limitations of the LLM-as-a-judge paradigm at the evaluation frontier where the goal is to assess newly released models that are possibly better than the judge. Through an empirical evaluation, we demonstrate that the sample size savings achievable in practice are even more modest than what our theoretical limit suggests. Along the way, our work provides new observations about debiasing methods for model evaluation, and points out promising avenues for future work.},
       arxiv={2410.13341},
       bibtex_show={true},
 }
@@ -19,6 +20,7 @@ booktitle={The Thirty-eighth Annual Conference on Neural Information Processing 
 year={2024},
 url={https://openreview.net/forum?id=U4BC0GrFAz},
 
+abstract={We study how well machine learning models trained on causal features generalize across domains. We consider 16 prediction tasks on tabular datasets covering applications in health, employment, education, social benefits, and politics. Each dataset comes with multiple domains, allowing us to test how well a model trained in one domain performs in another. For each prediction task, we select features that have a causal influence on the target of prediction. Our goal is to test the hypothesis that models trained on causal features generalize better across domains. Without exception, we find that predictors using all available features, regardless of causality, have better in-domain and out-of-domain accuracy than predictors using causal features. Moreover, even the absolute drop in accuracy from one domain to the other is no better for causal predictors than for models that use all features. In addition, we show that recent causal machine learning methods for domain generalization do not perform better in our evaluation than standard predictors trained on the set of causal features. Likewise, causal discovery algorithms either fail to run or select causal variables that perform no better than our selection. Extensive robustness checks confirm that our findings are stable under variable misclassification.},
 arxiv={2402.09891},
 code={https://github.com/socialfoundations/causal-features},
 bibtex_show={true},
@@ -33,6 +35,7 @@ selected={true}
   year = {2024},
   url = {https://proceedings.mlr.press/v235/stoica24a.html},
 
+  abstract={Many applications of RCTs involve the presence of multiple treatment administrators -- from field experiments to online advertising -- that compete for the subjects' attention. In the face of competition, estimating a causal effect becomes difficult, as the position at which a subject sees a treatment influences their response, and thus the treatment effect. In this paper, we build a game-theoretic model of agents who wish to estimate causal effects in the presence of competition, through a bidding system and a utility function that minimizes estimation error. Our main technical result establishes an approximation with a tractable objective that maximizes the sample value obtained through strategically allocating budget on subjects. This allows us to find an equilibrium in our model: we show that the tractable objective has a pure Nash equilibrium, and that any Nash equilibrium is an approximate equilibrium for our general objective that minimizes estimation error under broad conditions. Conceptually, our work successfully combines elements from causal inference and game theory to shed light on the equilibrium behavior of experimentation under competition.},
   arxiv={2406.03422},
   bibtex_show={true},
   selected={true}
