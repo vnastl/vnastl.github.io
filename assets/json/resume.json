@@ -92,8 +92,8 @@
   "publications": [
     {
       "name": "Limits to scalable evaluation at the frontier: LLM as Judge won't beat twice the data",
-      "publisher": "",
-      "releaseDate": "under review",
+      "publisher": "ICLR'25",
+      "releaseDate": "2025",
       "url": "https://arxiv.org/abs/2410.13341",
       "summary": ""
     },
@@ -101,7 +101,7 @@
       "name": "Do causal predictors generalize better to new domains?",
       "publisher": "NeurIPS'24",
       "releaseDate": "2024",
-      "url": "https://openreview.net/forum?id=U4BC0GrFAz",
+      "url": "https://arxiv.org/abs/2402.09891",
       "summary": ""
     },
     {
