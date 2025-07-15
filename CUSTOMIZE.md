@@ -36,7 +36,7 @@ The project is structured as follows, focusing on the main components that you w
 
 ## Configuration
 
-The configuration file [\_config.yml](_config.yml) contains the main configuration of the website. Most of the settings is self-explanatory and we also tried to add as much comments as possible. If you have any questions, please check if it was not already answered in the [FAQ](FAQ.md).
+The configuration file [\_config.yml](_config.yml) contains the main configuration of the website. Most of the settings is self-explanatory and we also tried to add as much comments as possible. If you have any questions, please check if it was not already answered in the FAQ.
 
 > Note that the `url` and `baseurl` settings are used to generate the links of the website, as explained in the [install instructions](INSTALL.md).
 
@@ -58,13 +58,13 @@ You can create new pages by adding new Markdown files in the [\_pages](_pages/) 
 
 ## Creating new blog posts
 
-To create a new blog post, you can add a new Markdown file in the \_posts directory. The [name of the file must follow](https://jekyllrb.com/docs/posts/#creating-posts) the format `YYYY-MM-DD-title.md`. The easiest way to do this is to copy an existing blog post and modify it. Note that some blog posts have optional fields in the [frontmatter](https://jekyllrb.com/docs/front-matter/) that are used to enable specific behaviors or functions.
+To create a new blog post, you can add a new Markdown file in the posts directory. The [name of the file must follow](https://jekyllrb.com/docs/posts/#creating-posts) the format `YYYY-MM-DD-title.md`. The easiest way to do this is to copy an existing blog post and modify it. Note that some blog posts have optional fields in the [frontmatter](https://jekyllrb.com/docs/front-matter/) that are used to enable specific behaviors or functions.
 
 If you want to create blog posts that are not ready to be published, but you want to track it with git, you can create a [\_drafts](https://jekyllrb.com/docs/posts/#drafts) directory and store them there.
 
 ## Creating new projects
 
-You can create new projects by adding new Markdown files in the \_projects directory. The easiest way to do this is to copy an existing project and modify it.
+You can create new projects by adding new Markdown files in the projects directory. The easiest way to do this is to copy an existing project and modify it.
 
 ## Adding some news
 
@@ -121,7 +121,7 @@ If the entry matches one of the combinations of the last names and the first nam
 
 There are several custom bibtex keywords that you can use to affect how the entries are displayed on the webpage:
 
-- `abbr`: Adds an abbreviation to the left of the entry. You can add links to these by creating a venue.yaml-file in the \_data folder and adding entries that match.
+- `abbr`: Adds an abbreviation to the left of the entry. You can add links to these by creating a venue.yaml-file in the data folder and adding entries that match.
 - `abstract`: Adds an "Abs" button that expands a hidden text field when clicked to show the abstract text
 - `altmetric`: Adds an [Altmetric](https://www.altmetric.com/) badge (Note: if DOI is provided just use `true`, otherwise only add the altmetric identifier here - the link is generated automatically)
 - `annotation`: Adds a popover info message to the end of the author list that can potentially be used to clarify superscripts. HTML is allowed.
@@ -191,7 +191,7 @@ In this folder you need to store your file in the same format as you would in `_
 - It will only upload files which follow the pattern `yyyy-mm-dd-title.md`
   - This means that only markdown files will be posted
   - It means that any markdown which do not follow this pattern will not be posted
-- The scheduler works by moving posts from the `_scheduled/` directory to `_posts/`, it will not post to folders like `_projects/` or `_news/`
+- The scheduler works by moving posts from the `_scheduled/` directory to `_posts/`, it will not post to folders like `_news/`
 - The date in the name of the file is the day that file will be uploaded on
   - `2024-08-27-file1.md` will not be posted before or after 27-August-2024 (Scheduler only works for posts scheduled on the present day)
   - `2025-08-27-file2.md` will be posted exactly on 27-August-2025
