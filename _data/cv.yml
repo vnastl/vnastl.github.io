@@ -19,7 +19,8 @@
         - title: Advisors
           contents:
             - Moritz Hardt (Max Planck Institute for Intelligent Systems)
-            - Nicolai Meinshausen (ETH Zurich)
+            - Nicolai Meinshausen (ETH Zürich)
+            - Peter Bühlmann (ETH Zürich)
     - title: MSc. Mathematical Finance
       institution: Universität Konstanz, Konstanz, Germany
       year: 2022
@@ -35,9 +36,11 @@
   contents:
     - title: Teaching assistant
       institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 2024 - present
+      year: 2024 - 2025
       description:
+        - Computatonal Statistics
         - Seminar in Statistics - MCMC Sampling Algorithms in Bayesian Computation
+        
 
     - title: Student research assistant
       institution: Universität Konstanz, Konstanz, Germany
