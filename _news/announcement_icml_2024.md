@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper on “Causal Inference from Competing Treatments” was accepted to ICML 2024. :bookmark:
+Our paper on “Causal Inference from Competing Treatments” was accepted to [ICML 2024](https://icml.cc/virtual/2024/38270). :bookmark:

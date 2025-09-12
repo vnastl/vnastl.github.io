@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper on "Limits to scalable evaluation at the frontier: LLM as Judge won't beat twice the data" was accepted to ICLR 2024 as an oral. :confetti_ball:
+Our paper on "Limits to scalable evaluation at the frontier: LLM as Judge won't beat twice the data" was accepted to [ICLR 2025](https://iclr.cc/virtual/2025/oral/31864) as an oral. :confetti_ball:
