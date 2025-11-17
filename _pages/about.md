@@ -9,9 +9,9 @@ profile:
   image: prof_pic.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
-    <p>Office: G 18</p>
-    <p>Rämistrasse 101</p>
-    <p>Zürich, Switzerland</p>
+    <p>Office:  N1.019</p>
+    <p>Max-Planck-Ring 4</p>
+    <p>Tübingen, Germany</p>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
