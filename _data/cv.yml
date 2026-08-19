@@ -75,6 +75,7 @@
         - ICML 2024, 2025
         - AAAI 2025
         - NeurIPS 2025
+        - ICML 2026
 
 - title: Awards
   type: time_table
@@ -83,20 +84,3 @@
       items:
         - Google Ph.D. Fellowship in the category “Human-Computer Interaction”
         - MPI-IS Outstanding Female Doctoral Student Prize
-
-# - title: Academic Interests
-#   type: nested_list
-#   contents:
-#     - title: Topic 1.
-#       items:
-#         - Description 1.
-#         - Description 2.
-#     - title: Topic 2.
-#       items:
-#         - Description 1.
-#         - Description 2.
-
-# - title: Other Interests
-#   type: list
-#   contents:
-#     - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
