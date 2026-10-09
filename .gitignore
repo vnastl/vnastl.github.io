@@ -11,3 +11,4 @@ latex/*.out
 latex/*.fls
 latex/*.fdb_latexmk
 latex/*.synctex.gz
+latex/cv.pdf
