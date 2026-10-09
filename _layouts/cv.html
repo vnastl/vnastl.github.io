@@ -1,0 +1,25 @@
+---
+layout: default
+---
+{% capture strong %}<strong>{{ site.name }}</strong>{% endcapture %}
+<article class="cv">
+  <h1>{{ page.title }}</h1>
+  <p class="links"><a href="{{ '/assets/cv.pdf' | relative_url }}">Download PDF</a></p>
+  {{ content }}
+  <h2>Publications</h2>
+  <ul>
+  {% assign pubs = site.publications | sort: "date" | reverse %}
+  {% for p in pubs %}
+    <li>{{ p.authors | replace: site.name, strong }}. “{{ p.title }}”. {{ p.venue }}, {{ p.date | date: "%Y" }}.{% if p.arxiv %} <a href="https://arxiv.org/abs/{{ p.arxiv }}">arXiv</a>{% endif %}{% if p.code %} <a href="{{ p.code }}">Code</a>{% endif %}
+      {% if p.posters %}<ul>{% for poster in p.posters %}<li>Poster: {{ poster }}</li>{% endfor %}</ul>{% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+  <h2>Talks</h2>
+  <ul>
+  {% assign talks = site.talks | sort: "date" | reverse %}
+  {% for t in talks %}
+    <li>{{ t.type }}, {% if t.link %}<a href="{{ t.link }}">{{ t.event }}</a>{% else %}{{ t.event }}{% endif %}{% if t.place %}, {{ t.place }}{% endif %} <span class="when">{{ t.date | date: "%B %Y" }}</span>{% if t.title %}<br><em>{{ t.title }}</em>{% endif %}</li>
+  {% endfor %}
+  </ul>
+</article>

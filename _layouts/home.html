@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<section id="about" class="about">
+  <div class="about-text">
+    <h1>{{ site.name }}</h1>
+    <p class="affiliation">{{ page.affiliation }}</p>
+    <p class="links">
+      <a href="mailto:{{ site.email }}">Email</a>
+      <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}">Google Scholar</a>
+      <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+      <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">LinkedIn</a>
+    </p>
+    {{ content }}
+  </div>
+  <img class="portrait" src="{{ '/assets/img/profile.jpg' | relative_url }}" alt="Portrait of {{ site.name }}" width="200" height="200">
+</section>
+{% include news.html %}
+{% include publications.html %}
+{% include talks.html %}

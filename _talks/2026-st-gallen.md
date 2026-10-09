@@ -1,0 +1,8 @@
+---
+date: 2026-11-17
+type: Invited seminar
+event: Econometrics seminar series, Swiss Institute for Empirical Economic Research (SEW-HSG)
+place: University of St. Gallen
+title:
+link:
+---

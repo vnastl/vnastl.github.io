@@ -1,0 +1,34 @@
+# Site settings. Everything else you edit lives in Markdown files; see README.md.
+name: Vivian Nastl
+title: Vivian Nastl
+email: vivian.nastl@tuebingen.mpg.de
+description: "Vivian Nastl, PhD student at the Max Planck ETH Center for Learning Systems. My research focuses on the responsible use of artificial intelligence: the impact it has on research and society at large, and how to steer this impact for good."
+url: https://vnastl.github.io
+baseurl: ""
+lang: en
+timezone: Europe/Berlin
+google_site_verification: bvL-fdA1HcZ-CcZfnCTwGze7DJqBjB6ZrpMMYLMYRjM
+
+# Ids for the link pills under the name
+scholar_userid: upz0NPIAAAAJ
+github_username: vnastl
+linkedin_username: vivian-yvonne-nastl-569a33318
+
+# How many news items show before the "Show older news" fold
+news_visible: 6
+
+# Content folders: one Markdown file per item
+collections:
+  news:
+    output: false
+  publications:
+    output: false
+  talks:
+    output: false
+
+exclude:
+  - README.md
+  - latex
+  - Gemfile
+  - Gemfile.lock
+  - vendor
