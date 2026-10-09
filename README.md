@@ -18,14 +18,16 @@ Layouts (`_layouts/`) and includes (`_includes/`) are the theme; they do not nee
 
 ## Preview locally
 
-Needs Ruby 3.4 (`brew install ruby@3.4`, then put `/opt/homebrew/opt/ruby@3.4/bin` first on your `PATH`).
+The easiest way is Docker (start Docker Desktop first):
 
 ```
-bundle install --path vendor/bundle
-bundle exec jekyll serve
+docker run --rm -it -p 4000:4000 -v "$PWD":/site -w /site ruby:3.4 \
+  bash -c "bundle config set --local path vendor/bundle && bundle install && bundle exec jekyll serve -H 0.0.0.0"
 ```
 
-Then open http://localhost:4000.
+Then open http://localhost:4000. The page rebuilds when you save a file.
+
+Without Docker you need Ruby 3.4 on your `PATH`; then `bundle install` and `bundle exec jekyll serve` do the same. (On this Mac, Homebrew would compile Ruby from source, which takes hours, so Docker is the practical route.)
 
 ## Deploy
 
