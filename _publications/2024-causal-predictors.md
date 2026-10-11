@@ -6,8 +6,8 @@ date: 2024-12-10
 arxiv: 2402.09891
 code: https://github.com/socialfoundations/causal-features
 posters:
-  - "Workshop on Algorithms for Learning and Economics (WALE), Kefalonia, June 2024"
-  - "Workshop “Humans, Algorithmic Decision-Making and Society” at ICML, Vienna, July 2024"
+  - "Workshop on Algorithms for Learning and Economics (WALE), June 2024"
+  - "Workshop “Humans, Algorithmic Decision-Making and Society” at ICML, July 2024"
 image: /assets/img/publications/causal-predictors.svg
 ---
 We study how well machine learning models trained on causal features generalize across domains. We consider 16 prediction tasks on tabular datasets covering applications in health, employment, education, social benefits, and politics. Each dataset comes with multiple domains, allowing us to test how well a model trained in one domain performs in another. For each prediction task, we select features that have a causal influence on the target of prediction. Our goal is to test the hypothesis that models trained on causal features generalize better across domains. Without exception, we find that predictors using all available features, regardless of causality, have better in-domain and out-of-domain accuracy than predictors using causal features. Moreover, even the absolute drop in accuracy from one domain to the other is no better for causal predictors than for models that use all features. In addition, we show that recent causal machine learning methods for domain generalization do not perform better in our evaluation than standard predictors trained on the set of causal features. Likewise, causal discovery algorithms either fail to run or select causal variables that perform no better than our selection. Extensive robustness checks confirm that our findings are stable under variable misclassification.
