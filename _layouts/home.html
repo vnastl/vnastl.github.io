@@ -18,3 +18,22 @@ layout: default
 {% include news.html %}
 {% include publications.html %}
 {% include talks.html %}
+<script>
+  // Underline the tab of the section currently in view.
+  (function () {
+    var links = Array.prototype.slice.call(document.querySelectorAll('nav a[href*="#"]'));
+    var byId = {};
+    links.forEach(function (a) { byId[a.getAttribute('href').split('#')[1]] = a; });
+    var sections = Object.keys(byId).map(function (id) { return document.getElementById(id); }).filter(Boolean);
+    function update() {
+      var y = window.scrollY + 90;
+      var current = sections[0];
+      sections.forEach(function (s) { if (s.offsetTop <= y) current = s; });
+      if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) current = sections[sections.length - 1];
+      links.forEach(function (a) { a.classList.toggle('current', a === byId[current.id]); });
+    }
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  })();
+</script>
