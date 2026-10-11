@@ -9,7 +9,7 @@ Personal website, built with [Jekyll](https://jekyllrb.com/). Everything you edi
 | Add a talk | new file `_talks/slug.md` (any name) with `date:`, `type:`, `event:`, `place:` (optional `topic:`, `link:`) |
 | Add or change a paper | `_publications/YYYY-slug.md`; its figure in `assets/img/publications/` |
 | CV page | `cv.md` (publications and talks are filled in from their folders) |
-| CV PDF | `latex/cv.tex`, then `latexmk -pdf -cd latex/cv.tex && cp latex/cv.pdf assets/cv.pdf` |
+| CV PDF | `latex/cv.tex`, then `latexmk -pdf -cd latex/cv.tex && cp latex/cv.pdf assets/cv_vivian_nastl.pdf` |
 | Name, email, Google Scholar / GitHub / LinkedIn ids, number of visible news items | `_config.yml` |
 | Colours, font, spacing | `assets/css/style.css` (colours in the `:root` block at the top) |
 | Logo, photo | `assets/img/logo.svg`, `assets/img/profile.jpg` |

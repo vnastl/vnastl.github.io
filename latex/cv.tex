@@ -1,5 +1,5 @@
 % CV of Vivian Nastl.
-% Compile:  latexmk -pdf -cd latex/cv.tex && cp latex/cv.pdf assets/cv.pdf
+% Compile:  latexmk -pdf -cd latex/cv.tex && cp latex/cv.pdf assets/cv_vivian_nastl.pdf
 \documentclass[10pt,a4paper]{article}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -24,6 +24,8 @@
 \newcommand{\entry}[2]{\par\noindent
   \begin{minipage}[t]{\dimexpr\linewidth-3.6cm\relax}\raggedright #1\end{minipage}\hfill
   \begin{minipage}[t]{3.4cm}\raggedleft #2\end{minipage}\par}
+% \pub{text}: one publication, set off from the next by a little space
+\newcommand{\pub}[1]{\par\noindent #1\par\vspace{5pt}}
 % \sub{text}: smaller detail line under an entry
 \newcommand{\sub}[1]{\par\noindent{\small #1}\par}
 
@@ -53,12 +55,12 @@
 \entry{\textbf{MPI-IS Outstanding Female Doctoral Student Prize}}{2025}
 
 \section{Publications}
-Florian E. Dorner, \textbf{Vivian Nastl}, Moritz Hardt.
+\pub{Florian E. Dorner, \textbf{Vivian Nastl}, Moritz Hardt.
 ``Limits to scalable evaluation at the frontier: LLM as Judge won't beat twice the data.''
 International Conference on Learning Representations (ICLR), 2025, oral.
-\href{https://arxiv.org/abs/2410.13341}{[arXiv]}
+\href{https://arxiv.org/abs/2410.13341}{[arXiv]}}
 
-\textbf{Vivian Nastl}, Moritz Hardt.
+\pub{\textbf{Vivian Nastl}, Moritz Hardt.
 ``Do causal predictors generalize better to new domains?''
 Conference on Neural Information Processing Systems (NeurIPS), 2024, spotlight.
 \href{https://arxiv.org/abs/2402.09891}{[arXiv]}
@@ -66,12 +68,12 @@ Conference on Neural Information Processing Systems (NeurIPS), 2024, spotlight.
 \begin{itemize}
   \item Poster, Workshop on Algorithms for Learning and Economics (WALE), Kefalonia, June 2024
   \item Poster, Workshop ``Humans, Algorithmic Decision-Making and Society'' at ICML 2024, July 2024
-\end{itemize}
+\end{itemize}}
 
-Ana-Andreea Stoica, \textbf{Vivian Nastl}, Moritz Hardt.
+\pub{Ana-Andreea Stoica, \textbf{Vivian Nastl}, Moritz Hardt.
 ``Causal Inference from Competing Treatments.''
 International Conference on Machine Learning (ICML), 2024.
-\href{https://arxiv.org/abs/2406.03422}{[arXiv]}
+\href{https://arxiv.org/abs/2406.03422}{[arXiv]}}
 
 \section{Talks}
 \entry{Invited seminar, Econometrics seminar series, Swiss Institute for Empirical Economic Research (SEW-HSG), University of St.\ Gallen}{November 2026}
