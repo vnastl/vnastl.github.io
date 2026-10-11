@@ -2,6 +2,6 @@
 <h2>Talks</h2>
 <ul>
 {% for t in talks %}
-  <li>{{ t.type }}, {% if t.link %}<a href="{{ t.link }}">{{ t.event }}</a>{% else %}{{ t.event }}{% endif %}{% if t.place %}, {{ t.place }}{% endif %} <span class="when">{{ t.date | date: "%B %Y" }}</span>{% if t.title %}<br><em>{{ t.title }}</em>{% endif %}</li>
+  <li>{{ t.type }}, {% if t.link %}<a href="{{ t.link }}">{{ t.event }}</a>{% else %}{{ t.event }}{% endif %}{% if t.place %}, {{ t.place }}{% endif %} <span class="when">{{ t.date | date: "%B %Y" }}</span>{% if t.topic %}<br><em>{{ t.topic }}</em>{% endif %}</li>
 {% endfor %}
 </ul>
