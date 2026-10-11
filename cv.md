@@ -38,4 +38,4 @@ permalink: /cv/
 
 ## Languages
 
-- German, English.
+- English, German.
