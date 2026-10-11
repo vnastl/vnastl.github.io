@@ -11,4 +11,4 @@ I’m part of the Social Foundations of Computation Department at MPI for Intell
 
 I expect to graduate in summer 2027 and am looking for postdoc opportunities at the intersection of artificial intelligence and social science.
 
-My research focuses on the responsible use of artificial intelligence: the impact it has on research and society at large, and how to steer this impact for good. I am interested in unlocking the value of diverse forms of data by scrutinizing their origins and determining how best to engage with them. I am most excited when this work meets practice, above all in public policy.
+My research focuses on the responsible use of artificial intelligence: the impact it has on research and society at large, and how to steer this impact for good. I am interested in unlocking the value of diverse forms of data by examining them and determining how best to engage with them. I am most excited when this work meets practice, above all in public policy.
