@@ -1,6 +1,6 @@
 /* Colours and font. Change the palette here. */
 :root {
-  --bg: #FAF9F6;      /* off-white page background */
+  --bg: #FFFFFF;      /* page background */
   --text: #2B2F31;    /* body text */
   --muted: #6B7A7D;   /* secondary text */
   --tab: #ECECEA;     /* light grey tabs and pills */
