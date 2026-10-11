@@ -6,7 +6,7 @@ Personal website, built with [Jekyll](https://jekyllrb.com/). Everything you edi
 |---|---|
 | Bio | `about.md` (text below the front matter; `affiliation:` in the front matter) |
 | Add a news item | new file `_news/YYYY-slug.md` with `date:` and one paragraph |
-| Add a talk | new file `_talks/YYYY-slug.md` with `date:`, `type:`, `event:`, `place:` (optional `title:`, `link:`) |
+| Add a talk | new file `_talks/slug.md` (any name) with `date:`, `type:`, `event:`, `place:` (optional `title:`, `link:`) |
 | Add or change a paper | `_publications/YYYY-slug.md`; its figure in `assets/img/publications/` |
 | CV page | `cv.md` (publications and talks are filled in from their folders) |
 | CV PDF | `latex/cv.tex`, then `latexmk -pdf -cd latex/cv.tex && cp latex/cv.pdf assets/cv.pdf` |
