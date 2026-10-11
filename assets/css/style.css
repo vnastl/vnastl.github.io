@@ -35,13 +35,18 @@ section, article.cv, article.page { scroll-margin-top: 72px; }
 .site-header .inner { max-width: 940px; margin: 0 auto; padding: 10px 16px; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
 .brand { display: flex; align-items: center; gap: 10px; font-weight: 600; color: var(--text); text-decoration: none; }
 .brand img { width: 28px; height: 28px; }
-nav { display: flex; gap: 6px; flex-wrap: wrap; }
-nav a, .links a, .pub-links a {
+nav { display: flex; gap: 18px; flex-wrap: wrap; }
+nav a {
+  color: var(--text); text-decoration: none; font-size: 0.95rem; white-space: nowrap;
+  padding: 2px 0; border-bottom: 2px solid transparent;
+}
+nav a:hover { color: var(--link); border-bottom-color: var(--rose); }
+nav a.current { border-bottom-color: var(--mist); }
+.links a, .pub-links a {
   background: var(--tab); color: var(--text); text-decoration: none;
   padding: 3px 12px; border-radius: 999px; font-size: 0.9rem; white-space: nowrap;
 }
-nav a:hover, .links a:hover, .pub-links a:hover { background: var(--rose); color: var(--text); }
-nav a.current { background: var(--mist); }
+.links a:hover, .pub-links a:hover { background: var(--rose); color: var(--text); }
 
 /* Bio */
 .about { display: flex; gap: 32px; align-items: flex-start; margin-top: 16px; }
