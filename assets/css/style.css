@@ -63,14 +63,16 @@ details.older summary { cursor: pointer; color: var(--link); margin: 4px 0 14px;
 .type { font-weight: 600; }
 .pill { background: var(--rose); border-radius: 999px; padding: 1px 9px; font-size: 0.75rem; vertical-align: middle; }
 
-/* Publications */
+/* Publications: title, authors, venue, then figure beside the abstract */
 .pub { margin: 0 0 44px; }
-.pub .figure { display: block; margin: 0 auto 14px; padding: 10px; border: 1px solid var(--mist); border-radius: 8px; }
 .pub .authors { margin: 0; }
 .pub .venue { margin: 0; color: var(--muted); }
 .pub .pub-links { display: flex; gap: 8px; margin: 8px 0; }
 .pub .posters { margin: 0 0 6px; color: var(--muted); font-size: 0.9rem; }
-.pub .abstract { font-size: 0.95rem; }
+.pub-body { display: flex; gap: 22px; align-items: flex-start; margin-top: 10px; }
+.pub-figure { flex: 0 0 46%; }
+.pub-figure .figure { display: block; width: 100%; padding: 8px; border: 1px solid var(--mist); border-radius: 8px; }
+.pub .abstract { flex: 1; min-width: 0; font-size: 0.9rem; line-height: 1.55; }
 .pub .abstract p:last-child { margin-bottom: 0; }
 
 /* CV page */
@@ -85,4 +87,6 @@ footer { color: var(--muted); font-size: 0.85rem; text-align: center; padding: 2
   .portrait { width: 160px; height: 160px; }
   ul.news li, ul.talks li { flex-direction: column; gap: 4px; }
   ul.news .date, ul.talks .date { align-self: flex-start; }
+  .pub-body { flex-direction: column; }
+  .pub-figure { flex: none; width: 100%; }
 }
