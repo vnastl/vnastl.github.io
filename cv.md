@@ -27,7 +27,7 @@ permalink: /cv/
 
 ## Professional experience
 
-- **Student research assistant**, 2018–2022. Chair of Statistics and Econometrics, Universität Konstanz.
+- **Student research assistant**, 2018–2022. Chair of Statistics and Econometrics, Universität Konstanz. Advisor: Ralf Brüggemann.
 
 ## Teaching experience
 
