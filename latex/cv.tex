@@ -15,10 +15,10 @@
 \hypersetup{colorlinks=true,urlcolor=link,linkcolor=link}
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{2.5pt}
+\setlength{\parskip}{3.0pt}
 \titleformat{\section}{\normalsize\bfseries}{}{0pt}{\MakeUppercase}[{\color{sage}\titlerule[0.8pt]}]
-\titlespacing*{\section}{0pt}{8pt}{3pt}
-\setlist[itemize]{leftmargin=1.4em,itemsep=1pt,topsep=2pt,label=\textcolor{sage}{\textbullet}}
+\titlespacing*{\section}{0pt}{10pt}{4pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=1.5pt,topsep=3pt,label=\textcolor{sage}{\textbullet}}
 
 % \entry{text}{date}: an ordinary paragraph that keeps the width of the date plus 0.5cm
 % free on the right, with the date set into that margin on the first line.
@@ -28,12 +28,12 @@
   \rlap{\makebox[\linewidth][r]{\usebox{\datebox}}}%
   {\rightskip=\dimexpr\wd\datebox+0.5cm\relax plus 1fil\relax #1\par}}
 % \pub{text}: one publication, set off from the next by a little space
-\newcommand{\pub}[1]{\par\noindent #1\par\vspace{5pt}}
+\newcommand{\pub}[1]{\par\noindent #1\par\vspace{6pt}}
 % \sub{text}: smaller detail line under an entry
 \newcommand{\sub}[1]{\par\noindent{\small #1}\par}
 
 \begin{document}
-\fontsize{9.6}{11.5}\selectfont
+\fontsize{9.6}{11.9}\selectfont
 \raggedright
 \hyphenpenalty=10000 \exhyphenpenalty=10000
 
