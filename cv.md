@@ -21,7 +21,7 @@ permalink: /cv/
 
 ## Service
 
-- Student representative, Max Planck ETH Center for Learning Systems, 2023–2026.
+- Student representative, CLS, 2023–2026.
 - Panel chair, “Future of ML and LLMs: How research methods are changing, how to use these tools responsibly in research, and which human skills stay relevant”, CLS 2026 Retreat, June 2026.
 - Reviewer: ICLR 2024; ICML 2024, 2025, 2026; AAAI 2025; NeurIPS 2025.
 
