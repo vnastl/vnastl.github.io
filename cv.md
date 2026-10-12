@@ -27,14 +27,14 @@ permalink: /cv/
 
 ## Professional experience
 
-- **Student research assistant**, 2018–2022. Chair of Statistics and Econometrics, Universität Konstanz. Advisor: Ralf Brüggemann.
+- Student research assistant, 2018–2022. Chair of Statistics and Econometrics, Universität Konstanz. Advisor: Ralf Brüggemann.
 
 ## Teaching experience
 
-- **Computational Statistics**, ETH Zürich, 2025. Teaching assistant.
-- **Seminar in Statistics: MCMC Sampling Algorithms in Bayesian Computation**, ETH Zürich, 2024–2025. Teaching assistant.
-- **Applied Econometrics**, Universität Konstanz, 2022. Teaching assistant.
-- **Statistics I and II**, Universität Konstanz, 2019–2022. Teaching assistant.
+- Computational Statistics, ETH Zürich, 2025. Teaching assistant.
+- Seminar in Statistics: MCMC Sampling Algorithms in Bayesian Computation, ETH Zürich, 2024–2025. Teaching assistant.
+- Applied Econometrics, Universität Konstanz, 2022. Teaching assistant.
+- Statistics I and II, Universität Konstanz, 2019–2022. Teaching assistant.
 
 ## Languages
 
