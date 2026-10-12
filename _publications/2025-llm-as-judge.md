@@ -1,7 +1,7 @@
 ---
 title: "Limits to scalable evaluation at the frontier: LLM as Judge won't beat twice the data"
 authors: Florian E. Dorner, Vivian Nastl, Moritz Hardt
-venue: International Conference on Learning Representations (ICLR), oral
+venue: ICLR, oral
 date: 2025-04-24
 arxiv: 2410.13341
 code:

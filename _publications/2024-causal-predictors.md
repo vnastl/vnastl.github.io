@@ -1,12 +1,12 @@
 ---
 title: "Do causal predictors generalize better to new domains?"
 authors: Vivian Nastl, Moritz Hardt
-venue: Conference on Neural Information Processing Systems (NeurIPS), spotlight
+venue: NeurIPS, spotlight
 date: 2024-12-10
 arxiv: 2402.09891
 code: https://github.com/socialfoundations/causal-features
 posters:
-  - "Workshop on Algorithms for Learning and Economics (WALE), June 2024"
+  - "Workshop on Algorithms for Learning and Economics, June 2024"
   - "Workshop “Humans, Algorithmic Decision-Making and Society” at ICML, July 2024"
 image: /assets/img/publications/causal-predictors.svg
 ---

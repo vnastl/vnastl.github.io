@@ -1,7 +1,7 @@
 ---
 title: "Causal Inference from Competing Treatments"
 authors: Ana-Andreea Stoica, Vivian Nastl, Moritz Hardt
-venue: International Conference on Machine Learning (ICML)
+venue: ICML
 date: 2024-07-21
 arxiv: 2406.03422
 code:
