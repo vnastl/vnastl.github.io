@@ -1,0 +1,99 @@
+% CV of Vivian Nastl.
+% Compile:  latexmk -pdf -cd latex/cv.tex && cp latex/cv.pdf assets/cv_vivian_nastl.pdf
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[defaultfam,tabular,lining]{montserrat}
+\usepackage[a4paper,margin=1.5cm]{geometry}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\definecolor{sage}{HTML}{839DA0}
+\definecolor{link}{HTML}{5A7579}
+\hypersetup{colorlinks=true,urlcolor=link,linkcolor=link}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2.5pt}
+\titleformat{\section}{\normalsize\bfseries}{}{0pt}{\MakeUppercase}[{\color{sage}\titlerule[0.8pt]}]
+\titlespacing*{\section}{0pt}{8pt}{3pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=1pt,topsep=2pt,label=\textcolor{sage}{\textbullet}}
+
+% \entry{text}{date}: an entry with the date flush right; long text wraps.
+\newcommand{\entry}[2]{\par\noindent
+  \begin{minipage}[t]{\dimexpr\linewidth-3.6cm\relax}\raggedright #1\end{minipage}\hfill
+  \begin{minipage}[t]{3.4cm}\raggedleft #2\end{minipage}\par}
+% \pub{text}: one publication, set off from the next by a little space
+\newcommand{\pub}[1]{\par\noindent #1\par\vspace{5pt}}
+% \sub{text}: smaller detail line under an entry
+\newcommand{\sub}[1]{\par\noindent{\small #1}\par}
+
+\begin{document}
+\fontsize{9.6}{11.5}\selectfont
+\raggedright
+\hyphenpenalty=10000 \exhyphenpenalty=10000
+
+\begin{center}
+  {\LARGE\bfseries Vivian Nastl}\\[4pt]
+  Max Planck Institute for Intelligent Systems, Tübingen, and ETH Zürich\\[2pt]
+  \href{mailto:vivian.nastl@tuebingen.mpg.de}{vivian.nastl@tuebingen.mpg.de}
+  \;|\;
+  \href{https://vnastl.github.io}{vnastl.github.io}
+\end{center}
+
+\section{Education}
+\entry{\textbf{PhD}, Max Planck ETH Center for Learning Systems (CLS)}{2022--present}
+\sub{Max Planck Institute for Intelligent Systems, Tübingen, and ETH Zürich\\
+\textit{Advisors:} Moritz Hardt, Nicolai Meinshausen, Peter Bühlmann}
+\entry{\textbf{MSc Mathematical Finance}, Universität Konstanz}{2020--2022}
+\entry{\textbf{BSc Mathematics}, Universität Konstanz}{2021--2022}
+\entry{\textbf{BSc Mathematical Finance}, Universität Konstanz}{2017--2020}
+
+\section{Fellowships and awards}
+\entry{\textbf{Google Ph.D.\ Fellowship}, category ``Human-Computer Interaction''}{2025}
+\entry{\textbf{MPI-IS Outstanding Female Doctoral Student Prize}}{2025}
+
+\section{Publications}
+\pub{Florian E. Dorner, \textbf{Vivian Nastl}, Moritz Hardt.
+``Limits to scalable evaluation at the frontier: LLM as Judge won't beat twice the data.''
+International Conference on Learning Representations (ICLR), oral, 2025.
+\href{https://arxiv.org/abs/2410.13341}{[arXiv]}}
+
+\pub{\textbf{Vivian Nastl}, Moritz Hardt.
+``Do causal predictors generalize better to new domains?''
+Conference on Neural Information Processing Systems (NeurIPS), spotlight, 2024.
+\href{https://arxiv.org/abs/2402.09891}{[arXiv]}
+\href{https://github.com/socialfoundations/causal-features}{[code]}
+\begin{itemize}
+  \item Poster: Workshop on Algorithms for Learning and Economics (WALE), June 2024
+  \item Poster: Workshop ``Humans, Algorithmic Decision-Making and Society'' at ICML, July 2024
+\end{itemize}}
+
+\pub{Ana-Andreea Stoica, \textbf{Vivian Nastl}, Moritz Hardt.
+``Causal Inference from Competing Treatments.''
+International Conference on Machine Learning (ICML), 2024.
+\href{https://arxiv.org/abs/2406.03422}{[arXiv]}}
+
+\section{Talks}
+\entry{Invited seminar, Econometrics Seminar, Swiss Institute for Empirical Economic Research, University of St.\ Gallen}{November 2026}
+\entry{Talk, Research presentation for a delegation of the State Parliament of Baden-Württemberg, as part of Gunnar Rätsch's presentation of the Max Planck ETH Center for Learning Systems, ETH Zürich}{December 2025}
+\entry{Invited seminar, Causal Inference Seminar, Causal Inference Lab, University of Potsdam}{November 2025}
+\entry{Talk, 18th BiGSEM Doctoral Workshop on Economics and Management, Bielefeld University}{December 2023}
+
+\section{Service}
+\entry{Student representative, Max Planck ETH Center for Learning Systems}{2023--2026}
+\entry{Panel chair, ``Future of ML and LLMs: How research methods are changing, how to use these tools responsibly in research, and which human skills stay relevant'', CLS 2026 Retreat}{June 2026}
+\entry{Reviewer: ICLR 2024; ICML 2024, 2025, 2026; AAAI 2025; NeurIPS 2025}{}
+
+\section{Professional experience}
+\entry{\textbf{Student research assistant}, Chair of Statistics and Econometrics, Universität Konstanz}{2018--2022}
+\sub{\textit{Advisor:} Ralf Brüggemann}
+
+\section{Teaching experience}
+\entry{\textbf{Computational Statistics}, ETH Zürich (teaching assistant)}{2024--2025}
+\entry{\textbf{Seminar in Statistics: MCMC Sampling Algorithms in Bayesian Computation}, ETH Zürich (teaching assistant)}{2024--2025}
+\entry{\textbf{Applied Econometrics}, Universität Konstanz (teaching assistant)}{2019--2022}
+\entry{\textbf{Statistics I and II}, Universität Konstanz (teaching assistant)}{2019--2022}
+
+\end{document}

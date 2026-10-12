@@ -1,0 +1,39 @@
+---
+layout: default
+---
+<section id="about" class="about">
+  <div class="about-text">
+    <h1>{{ site.name }}</h1>
+    <p class="affiliation">{{ page.affiliation }}</p>
+    <p class="links">
+      <a href="mailto:{{ site.email }}">Email</a>
+      <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}">Google Scholar</a>
+      <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+      <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">LinkedIn</a>
+    </p>
+    {{ content }}
+  </div>
+  <img class="portrait" src="{{ '/assets/img/profile.jpg' | relative_url }}" alt="Portrait of {{ site.name }}" width="200" height="200">
+</section>
+{% include news.html %}
+{% include publications.html %}
+{% include talks.html %}
+<script>
+  // Underline the tab of the section currently in view.
+  (function () {
+    var links = Array.prototype.slice.call(document.querySelectorAll('nav a[href*="#"]'));
+    var byId = {};
+    links.forEach(function (a) { byId[a.getAttribute('href').split('#')[1]] = a; });
+    var sections = Object.keys(byId).map(function (id) { return document.getElementById(id); }).filter(Boolean);
+    function update() {
+      var y = window.scrollY + 90;
+      var current = sections[0];
+      sections.forEach(function (s) { if (s.offsetTop <= y) current = s; });
+      if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) current = sections[sections.length - 1];
+      links.forEach(function (a) { a.classList.toggle('current', a === byId[current.id]); });
+    }
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  })();
+</script>

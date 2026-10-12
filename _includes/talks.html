@@ -1,0 +1,15 @@
+{% assign talks = site.talks | sort: "date" | reverse %}
+<section id="talks">
+  <h2>Talks</h2>
+  <ul class="talks">
+  {% for t in talks %}
+    <li>
+      <span class="date">{{ t.date | date: "%b %Y" }}</span>
+      <div>
+        <span class="type">{{ t.type }}</span> · {% if t.link %}<a href="{{ t.link }}">{{ t.event }}</a>{% else %}{{ t.event }}{% endif %}{% if t.place %}, {{ t.place }}{% endif %}{% if t.date > site.time %} <span class="pill">upcoming</span>{% endif %}
+        {% if t.topic %}<br><em>{{ t.topic }}</em>{% endif %}
+      </div>
+    </li>
+  {% endfor %}
+  </ul>
+</section>

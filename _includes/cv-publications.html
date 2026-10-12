@@ -1,0 +1,10 @@
+{% capture strong %}<strong>{{ site.name }}</strong>{% endcapture %}
+{% assign pubs = site.publications | sort: "date" | reverse %}
+<h2>Publications</h2>
+<ul>
+{% for p in pubs %}
+  <li>{{ p.authors | replace: site.name, strong }}. “{{ p.title }}”. {{ p.venue }}, {{ p.date | date: "%Y" }}.{% if p.arxiv %} <a href="https://arxiv.org/abs/{{ p.arxiv }}">arXiv</a>{% endif %}{% if p.code %} <a href="{{ p.code }}">Code</a>{% endif %}
+    {% if p.posters %}<ul>{% for poster in p.posters %}<li>Poster: {{ poster }}</li>{% endfor %}</ul>{% endif %}
+  </li>
+{% endfor %}
+</ul>
