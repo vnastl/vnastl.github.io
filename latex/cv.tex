@@ -20,10 +20,11 @@
 \titlespacing*{\section}{0pt}{8pt}{3pt}
 \setlist[itemize]{leftmargin=1.4em,itemsep=1pt,topsep=2pt,label=\textcolor{sage}{\textbullet}}
 
-% \entry{text}{date}: an entry with the date flush right; long text wraps.
+% \entry{text}{date}: an ordinary paragraph that keeps 3.6cm free on the right,
+% with the date set into that margin on the first line (uniform spacing between entries).
 \newcommand{\entry}[2]{\par\noindent
-  \begin{minipage}[t]{\dimexpr\linewidth-3.6cm\relax}\raggedright #1\end{minipage}\hfill
-  \begin{minipage}[t]{3.4cm}\raggedleft #2\end{minipage}\par}
+  \rlap{\makebox[\linewidth][r]{#2}}%
+  {\rightskip=3.6cm plus 1fil\relax #1\par}}
 % \pub{text}: one publication, set off from the next by a little space
 \newcommand{\pub}[1]{\par\noindent #1\par\vspace{5pt}}
 % \sub{text}: smaller detail line under an entry
