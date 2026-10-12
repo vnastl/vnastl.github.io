@@ -6,7 +6,7 @@ Personal website, built with [Jekyll](https://jekyllrb.com/). Everything to edit
 |---|---|
 | Bio | `about.md` (text below the front matter; `affiliation:` in the front matter) |
 | Add a news item | new file `_news/YYYY-slug.md` with `date:` and one paragraph |
-| Add a talk | new file `_talks/slug.md` (any name) with `date:`, `type:`, `event:`, `place:` (optional `topic:`, `link:`) |
+| Add a talk | new file `_talks/slug.md` (any name) with `date:`, `type:`, `event:`, `place:` (optional `topic:`, `link:`). A talk with a future date shows on the homepage as upcoming and appears on the CV page once the date has passed; add it to the CV PDF by hand then. |
 | Add or change a paper | `_publications/YYYY-slug.md`; its figure in `assets/img/publications/` |
 | CV page | `cv.md` (publications and talks are filled in from their folders) |
 | CV PDF | `latex/cv.tex`, then `latexmk -pdf -cd latex/cv.tex && cp latex/cv.pdf assets/cv_vivian_nastl.pdf` |
