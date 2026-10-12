@@ -20,11 +20,13 @@
 \titlespacing*{\section}{0pt}{8pt}{3pt}
 \setlist[itemize]{leftmargin=1.4em,itemsep=1pt,topsep=2pt,label=\textcolor{sage}{\textbullet}}
 
-% \entry{text}{date}: an ordinary paragraph that keeps 3.6cm free on the right,
-% with the date set into that margin on the first line (uniform spacing between entries).
+% \entry{text}{date}: an ordinary paragraph that keeps the width of the date plus 0.5cm
+% free on the right, with the date set into that margin on the first line.
+\newsavebox{\datebox}
 \newcommand{\entry}[2]{\par\noindent
-  \rlap{\makebox[\linewidth][r]{#2}}%
-  {\rightskip=3.6cm plus 1fil\relax #1\par}}
+  \sbox{\datebox}{#2}%
+  \rlap{\makebox[\linewidth][r]{\usebox{\datebox}}}%
+  {\rightskip=\dimexpr\wd\datebox+0.5cm\relax plus 1fil\relax #1\par}}
 % \pub{text}: one publication, set off from the next by a little space
 \newcommand{\pub}[1]{\par\noindent #1\par\vspace{5pt}}
 % \sub{text}: smaller detail line under an entry
